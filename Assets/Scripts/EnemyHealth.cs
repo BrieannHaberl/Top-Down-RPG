@@ -62,6 +62,7 @@ public class EnemyHealth : MonoBehaviour
 
     public void HurtEnemy(int damage)
     {
+        
         curentHealth -= damage;
         flashOn = true; 
         flashCounter = flashDuration;
