@@ -17528,7 +17528,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: SampleScene
-  playerPosition: {x: -11.5, y: 6}
+  playerPosition: {x: -13.3, y: 11}
   playerStorage: {fileID: 11400000, guid: f7f862edb52ba414f893f68dab78ccdf, type: 2}
 --- !u!1 &1612018054
 GameObject:
