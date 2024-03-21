@@ -1,0 +1,231 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5137776147526353217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambience/ambientEnvironment
+  m_EditorClassIdentifier: 
+  Path: event:/Ambience/ambientEnvironment
+  Guid:
+    Data1: 942873040
+    Data2: 1136741313
+    Data3: -1295209083
+    Data4: -197746584
+  Banks:
+  - {fileID: 8966515355457630732}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 128233
+--- !u!114 &-339819152926278032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambience/waterWaves
+  m_EditorClassIdentifier: 
+  Path: event:/Ambience/waterWaves
+  Guid:
+    Data1: 1745934366
+    Data2: 1279526778
+    Data3: 1610982548
+    Data4: 292416532
+  Banks:
+  - {fileID: 8966515355457630732}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 272415
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: 810679704776769864}
+  - {fileID: 8966515355457630732}
+  EditorEvents:
+  - {fileID: -339819152926278032}
+  - {fileID: 7479879672318346160}
+  - {fileID: 3007945120666878710}
+  - {fileID: 3799756048081762866}
+  - {fileID: -5137776147526353217}
+  - {fileID: 1041081998977052814}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: 8966515355457630732}
+  StringsBanks:
+  - {fileID: 810679704776769864}
+  cacheTime: 638464433223564829
+  cacheVersion: 131617
+--- !u!114 &810679704776769864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Banks/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638464433223564829
+  FileSizes:
+  - Name: 
+    Value: 1054
+  Exists: 1
+--- !u!114 &1041081998977052814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/PlayerInteractive/footstepGrass
+  m_EditorClassIdentifier: 
+  Path: event:/PlayerInteractive/footstepGrass
+  Guid:
+    Data1: 1724760314
+    Data2: 1199055906
+    Data3: 962269319
+    Data4: -1936715920
+  Banks:
+  - {fileID: 8966515355457630732}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &3007945120666878710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambience/waterfall
+  m_EditorClassIdentifier: 
+  Path: event:/Ambience/waterfall
+  Guid:
+    Data1: 1720885842
+    Data2: 1284710147
+    Data3: -1226422653
+    Data4: 1715267424
+  Banks:
+  - {fileID: 8966515355457630732}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 60078
+--- !u!114 &3799756048081762866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambience/waterfountain
+  m_EditorClassIdentifier: 
+  Path: event:/Ambience/waterfountain
+  Guid:
+    Data1: 1605247906
+    Data2: 1275509240
+    Data3: 1896415638
+    Data4: 230981214
+  Banks:
+  - {fileID: 8966515355457630732}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 116858
+--- !u!114 &7479879672318346160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/PlayerInteractive/swordSlash
+  m_EditorClassIdentifier: 
+  Path: event:/PlayerInteractive/swordSlash
+  Guid:
+    Data1: 1266105923
+    Data2: 1226873946
+    Data3: 1227832757
+    Data4: -176959215
+  Banks:
+  - {fileID: 8966515355457630732}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &8966515355457630732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Banks/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638464433223536999
+  FileSizes: []
+  Exists: 1
