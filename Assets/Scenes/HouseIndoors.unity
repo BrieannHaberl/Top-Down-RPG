@@ -506,7 +506,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 9053683864864886353, guid: cd238afc2f6013f4eae28fbbb00b1502, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1922507721}
   m_SourcePrefab: {fileID: 100100000, guid: cd238afc2f6013f4eae28fbbb00b1502, type: 3}
 --- !u!1001 &194375142
 PrefabInstance:
@@ -24811,6 +24814,30 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 747149508876385897, guid: bfb7c3b9cfb6e274d98699bc84875de0, type: 3}
   m_PrefabInstance: {fileID: 1871671362}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1922507720 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9053683864864886353, guid: cd238afc2f6013f4eae28fbbb00b1502, type: 3}
+  m_PrefabInstance: {fileID: 180269155}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1922507721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1922507720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 259a6bf4dce600a4883ae4b365c91f35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  footstepEvent:
+    Guid:
+      Data1: 531820025
+      Data2: 1176912751
+      Data3: 1703220139
+      Data4: -268590352
+    Path: event:/PlayerInteractive/footstepWood
 --- !u!1 &1931796846
 GameObject:
   m_ObjectHideFlags: 0
