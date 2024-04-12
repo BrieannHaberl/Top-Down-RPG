@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnemyHealth : MonoBehaviour
 {
@@ -8,16 +9,25 @@ public class EnemyHealth : MonoBehaviour
 
     public int curentHealth;
     public int maxHealth;
+    public bool isBoss; // trigger for win screen
+    public GameObject winScreen;
+    public GameObject hideHearts; // for hiding the hearts after we win
+
 
     public bool flashOn;
     [SerializeField]
     private float flashDuration = 0f;
     private float flashCounter = 0f;
     private SpriteRenderer enemySprite;
+   // private Rigidbody2D rb; // added for knockback
+   // public float knockbackForce = 10f;
+
+    public float delayBeforeMenuLoad = 3f; // Time to wait before loading the menu scene
 
     void Start()
     {
         enemySprite = GetComponent<SpriteRenderer>();
+      //  rb = GetComponent<Rigidbody2D>(); //get rigidbody
     }
 
     // Update is called once per frame
@@ -68,7 +78,30 @@ public class EnemyHealth : MonoBehaviour
         flashCounter = flashDuration;
         if (curentHealth <= 0)
         {
-            Destroy(gameObject);
+            if (isBoss)
+            {
+                winScreen.SetActive(true);
+                StartCoroutine(LoadMenuSceneAfterDelay());
+                Destroy(gameObject);
+                hideHearts.SetActive(false);
+
+            }
+            else
+            {
+                Destroy(gameObject); // regular enemies
+            }
+            
         }
+       // Vector2 knockbackDirection = (transform.position - PlayerController.instance.transform.position).normalized;
+        // rb.AddForce(knockbackDirection * knockbackForce, ForceMode2D.Impulse);
     }
+
+    IEnumerator LoadMenuSceneAfterDelay()
+    {
+        // Wait for the specified delay before loading the menu scene
+        yield return new WaitForSeconds(delayBeforeMenuLoad);
+        // Load the menu scene
+        SceneManager.LoadScene("TitleScreen");
+    }
+
 }

@@ -21,7 +21,7 @@ public class MultipleDialog : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.V) && playerInRange)
+        if (Input.GetKeyDown(KeyCode.L) && playerInRange)
         {
             // Toggle visibility of dialogBox
             dialogBox.SetActive(!dialogBox.activeInHierarchy);
@@ -34,6 +34,7 @@ public class MultipleDialog : MonoBehaviour
                 interactionCounter++;
             }
         }
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

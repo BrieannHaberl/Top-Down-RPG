@@ -13,7 +13,8 @@ public class ItemManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI descriptionText;
     [SerializeField] private GameObject useButton;
     public InventoryItem currentItem;
-
+    public HeartManager heartManager; // Reference to the HeartManager script
+    public GameObject loseScreenBlueApple; // special lose screen 
     public void SetTextAndButton(string description, bool buttonActive)
     {
         descriptionText.text = description;
@@ -71,6 +72,14 @@ public class ItemManager : MonoBehaviour
         if (currentItem)
         {
             currentItem.Use();
+
+            if (currentItem.itemName == "BlueApple") 
+            {
+                // Lose all health by calling the TakeDamage method of the HeartManager
+
+                heartManager.TakeDamage(heartManager.maxHealth);
+                loseScreenBlueApple.SetActive(true);
+            }
         }
     }
 
